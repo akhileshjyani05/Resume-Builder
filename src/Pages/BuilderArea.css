@@ -1,0 +1,40 @@
+#main-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--chakra-colors-chakra-subtle-bg);
+    min-height: 80vh;
+}
+
+#theme-box-border {
+    height: fit-content;
+    width: 800px; 
+    max-width: 100%;
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+}
+
+#theme-box-border:hover {
+    transform: translateY(-5px);
+}
+
+#spinner {
+    position: absolute !important;
+    top: 50vh;
+    left: 50vw;
+}
+
+@media only screen and (max-width: 1108px) {
+    #main-box {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    #theme-box-border {
+        width: 100%;
+    }
+}
